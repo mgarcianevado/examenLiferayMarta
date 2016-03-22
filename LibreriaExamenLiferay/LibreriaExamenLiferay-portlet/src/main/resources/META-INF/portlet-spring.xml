@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.telefonica.talentum.service.UsuarioLocalService" class="com.telefonica.talentum.service.impl.UsuarioLocalServiceImpl" />
+	<bean id="com.telefonica.talentum.service.UsuarioService" class="com.telefonica.talentum.service.impl.UsuarioServiceImpl" />
+	<bean id="com.telefonica.talentum.service.persistence.UsuarioPersistence" class="com.telefonica.talentum.service.persistence.UsuarioPersistenceImpl" parent="basePersistence" />
+</beans>
